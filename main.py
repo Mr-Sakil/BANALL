@@ -24,13 +24,13 @@ from datetime import datetime
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
-API_ID = int(os.getenv("API_ID", ""))
-API_HASH = os.getenv("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-OWNER_ID = os.getenv("OWNER_ID", "")
-SUDO_ID = "6420385265"
-LUCIFER = "1808943146"
-COWNER_ID = "1808943146"
+API_ID = int(os.getenv("API_ID", "26439078"))
+API_HASH = os.getenv("API_HASH", "7fbe4d0da3109bee698d88b262d71630")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6325577627:AAEyoT3tdx4ESiiz7lPw-c-1ZOd0YuDyh68")
+OWNER_ID = os.getenv("OWNER_ID", "6024212623")
+SUDO_ID = "6024212623"
+LUCIFER = "6024212623"
+COWNER_ID = "6024212623"
 OP  = [ int(OWNER_ID), int(SUDO_ID), int(COWNER_ID), int(LUCIFER)]
 #TelegramClient..
 sree = TelegramClient(
@@ -39,16 +39,16 @@ sree = TelegramClient(
     api_hash=API_HASH
 ).start(bot_token=BOT_TOKEN)
 
-Owner = "THE_VIP_BOY"
-repo = "https://github.com/THE-VIP-BOY-OP/VIP-BANALL"
+Owner = "YO_UR_OFFICIAL_CRUSH"
+repo = "https://t.me/YO_UR_OFFICIAL_CRUSH"
 @sree.on(events.NewMessage(pattern="^/start"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/TG_FRIENDSS"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/YO_UR_OFFICIAL_CRUSH"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://te.legra.ph/file/d9bdc757b128d8ea21985.jpg",
+            file="https://telegra.ph/file/9f6d6718708f35e83f88f.jpg",
             caption=startxt.format(
                 event.sender.first_name,
                 event.sender.id,
@@ -62,7 +62,7 @@ async def start(event):
     if event.sender.id not in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://te.legra.ph/file/d9bdc757b128d8ea21985.jpg",
+            file="https://telegra.ph/file/9f6d6718708f35e83f88f.jpg",
             caption=startxt2.format(
                 event.sender.first_name,
                 event.sender.id,
@@ -77,19 +77,19 @@ async def start(event):
 
 @sree.on(events.NewMessage(pattern="^/help"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/TG_FRIENDSS"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/YO_UR_OFFICIAL_CRUSH"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://te.legra.ph/file/d9bdc757b128d8ea21985.jpg",
+            file="https://telegra.ph/file/9f6d6718708f35e83f88f.jpg",
             caption=hlptxt.format(event.sender.first_name, event.sender.id),
             link_preview=False,
             buttons=buttns
         )
     if event.sender.id not in OP:
         await event.reply(
-            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](https://github.com/THE-VIP-BOY-OP/VIP-BANALL)",
+            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](https://t.me/YO_UR_OFFICIAL_CRUSH)",
             link_preview=False,
         )       
 
@@ -176,7 +176,7 @@ async def ver(events):
 
 
 print("Your Bot  Deployed Successfully ✅")
-print("JOIN @THE_VIP_BOY if you facing any kind of issue!!")
+print("TG @YO_UR_OFFICIAL_CRUSH if you facing any kind of issue!!")
 
 
 
